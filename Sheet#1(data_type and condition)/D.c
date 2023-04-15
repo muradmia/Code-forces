@@ -2,14 +2,14 @@
 int main(){
 
 
-    int a , b ,c ,d;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
-    scanf("%d",&d);
+    long long int  a , b ,c ,d;
+    scanf("%lld",&a);
+    scanf("%lld",&b);
+    scanf("%lld",&c);
+    scanf("%lld",&d);
 
-    int result = (a * b) - (c * d);
-    printf("Difference = %d",result);
+    long long int result = (a * b) - (c * d);
+    printf("Difference = %lld",result);
 
     return 0;
 }
