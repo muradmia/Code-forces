@@ -2,28 +2,27 @@
 #include<string.h>
 int main(){
 
-    char s[10001];
-    gets(s);
-    int j = strlen(s)-1;
-    int  i = 0,count = 1;
+    char a[10001];
+    char b[10001];
 
-    
-    while(i < j){
-       if(s[i] != s[j]){
-           count = 0;
-           break;
-       }else{
-            i++;
-            j--;
-       }
-    }
-    if(count == 1){
-        printf("YES\n");
-    }else{
-        printf("NO\n");
-    }
+    scanf("%s",&a);
+    scanf("%s",&b);
+
+    int len = strlen(a);
+    int len2 = strlen(b);
+
    
 
+    printf("%d %d\n",len,len2);
+
+    printf("%s%s",a,b);
+
+    char temp = a[0];
+        a[0] = b[0];
+        b[0] = temp;
+    
+    printf("\n%s %s",a,b);
+    
 
     return 0;
 }
